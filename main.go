@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	DecompressRun_LengthEncodedList "leetcode/DecompressRun-LengthEncodedList"
+)
+
 func main() {
 	// Number of Steps
 	//fmt.Println( "Total Steps: ", numberOfSteps.NumberOfSteps(14))
@@ -13,12 +18,12 @@ func main() {
 	//fmt.Println(subtractTheProductAndSum.SubtractProductAndSum(4421))
 	
 	// 1313. Decompress Run-Length Encoded List
-	//nums := []int{1,2,3,4}
-	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
-	//nums = []int{1,1,2,3}
-	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
-	//nums = []int{4,1,3,2}
-	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
-	//nums = []int{4,3,2,3}
-	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	nums := []int{1,2,3,4}
+	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	nums = []int{1,1,2,3}
+	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	nums = []int{4,1,3,2}
+	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	nums = []int{4,3,2,1}
+	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
 }
