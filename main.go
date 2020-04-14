@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	DecompressRun_LengthEncodedList "leetcode/DecompressRun-LengthEncodedList"
+	"leetcode/SearchInsertPosition"
 )
 
 func main() {
@@ -18,12 +18,25 @@ func main() {
 	//fmt.Println(subtractTheProductAndSum.SubtractProductAndSum(4421))
 	
 	// 1313. Decompress Run-Length Encoded List
-	nums := []int{1,2,3,4}
-	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
-	nums = []int{1,1,2,3}
-	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
-	nums = []int{4,1,3,2}
-	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
-	nums = []int{4,3,2,1}
-	fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	//nums := []int{1,2,3,4}
+	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	//nums = []int{1,1,2,3}
+	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	//nums = []int{4,1,3,2}
+	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	//nums = []int{4,3,2,1}
+	//fmt.Println(DecompressRun_LengthEncodedList.DecompressRLElist(nums))
+	
+	// 35. Search Insert Position
+	nums := []int{1,3,5,6}
+	fmt.Println(SearchInsertPosition.SearchInsert(nums, 5))
+	fmt.Println(SearchInsertPosition.SearchInsert(nums, 2))
+	fmt.Println(SearchInsertPosition.SearchInsert(nums, 7))
+	fmt.Println(SearchInsertPosition.SearchInsert(nums, 0))
+	nums = []int{1}
+	fmt.Println(SearchInsertPosition.SearchInsert(nums, 1))
+	nums = []int{1,2}
+	fmt.Println(SearchInsertPosition.SearchInsert(nums, 3))
+	nums = []int{1,3,5}
+	fmt.Println(SearchInsertPosition.SearchInsert(nums, 1))
 }
