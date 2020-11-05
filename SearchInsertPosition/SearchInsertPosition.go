@@ -1,10 +1,6 @@
 package SearchInsertPosition
 
-import "fmt"
-
 func SearchInsert(nums []int, target int) int {
-	fmt.Println("================")
-	fmt.Printf("traget: %d, array: %v\n", target, nums)
 	var result, left int
 	right := nums[len(nums) - 1]
 	
@@ -26,8 +22,6 @@ func SearchInsert(nums []int, target int) int {
 			}
 		}
 	}
-	
-	fmt.Printf("result: %d, left: %d, right: %d \n", result, left, right)
 	
 	return result
 }
