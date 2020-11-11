@@ -6,7 +6,7 @@ func MaxDepth(s string) int {
   for _, c := range s {
     if c == '(' {
       nest++
-      if (ans > nest) {
+      if ans > nest {
         ans = ans
       } else {
         ans = nest
